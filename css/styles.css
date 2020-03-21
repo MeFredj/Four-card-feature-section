@@ -65,9 +65,15 @@ h3 {
   width: 550px;
 }
 
-.row {
+.flex-container {
   margin: 0 auto;
-  width: 1240px;
+  width: 1200px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  position: relative;
 }
 
 /************CARDS************/
@@ -81,8 +87,8 @@ h3 {
   height: 240px;
   overflow: hidden;
   position: relative;
-  width: 380px;
-  margin: 15px;
+  width: 375px;
+  margin: 15px 0;
 }
 
 .highlight-line {
@@ -113,4 +119,9 @@ h3 {
   position: absolute;
   right: 30px;
   bottom: 30px;
+}
+
+#card-karma {
+  flex-basis: 100%;
+  text-align: center;
 }
